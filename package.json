@@ -1,0 +1,31 @@
+{
+  "name": "google-workspace-mcp",
+  "version": "1.0.0",
+  "description": "Local-first MCP server for Google Workspace via the gws CLI",
+  "main": "dist/server.js",
+  "bin": {
+    "google-workspace-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/server.js",
+    "smoke:auth": "gws auth status"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.local/
+coverage/
+*.log
+.DS_Store
+
+# Local Google OAuth material should stay outside the repo, but keep guardrails.
+client_secret*.json
+credentials*.json
+credentials.enc
