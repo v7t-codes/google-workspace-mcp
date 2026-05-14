@@ -7,8 +7,8 @@ describe("getAuthStatus", () => {
     const runGwsJson: RunGwsJson = async () => ({
       auth_method: "oauth2",
       user: "me@example.com",
-      client_config: "/Users/me/.config/gws/client_secret.json",
-      encrypted_credentials: "/Users/me/.config/gws/credentials.enc",
+      client_config: "/home/example/.config/gws/client_secret.json",
+      encrypted_credentials: "/home/example/.config/gws/credentials.enc",
       token_valid: true,
     });
 

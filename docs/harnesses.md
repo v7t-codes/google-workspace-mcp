@@ -3,7 +3,7 @@
 Use the stdio server for local harnesses:
 
 ```bash
-node /Users/vsasi/dev/google-workspace-mcp/dist/server.js
+node /path/to/google-workspace-mcp/dist/server.js
 ```
 
 Run `npm run build` first.
@@ -17,9 +17,9 @@ Project or global `mcp.json`:
   "mcpServers": {
     "gworkspace": {
       "command": "node",
-      "args": ["/Users/vsasi/dev/google-workspace-mcp/dist/server.js"],
+      "args": ["/path/to/google-workspace-mcp/dist/server.js"],
       "env": {
-        "GWORKSPACE_MCP_DOWNLOAD_DIR": "/Users/vsasi/Downloads/gworkspace-mcp"
+        "GWORKSPACE_MCP_DOWNLOAD_DIR": "${HOME}/Downloads/gworkspace-mcp"
       }
     }
   }
@@ -37,9 +37,9 @@ Use the same stdio command in the MCP server config:
   "mcpServers": {
     "gworkspace": {
       "command": "node",
-      "args": ["/Users/vsasi/dev/google-workspace-mcp/dist/server.js"],
+      "args": ["/path/to/google-workspace-mcp/dist/server.js"],
       "env": {
-        "GWORKSPACE_MCP_DOWNLOAD_DIR": "/Users/vsasi/Downloads/gworkspace-mcp"
+        "GWORKSPACE_MCP_DOWNLOAD_DIR": "${HOME}/Downloads/gworkspace-mcp"
       }
     }
   }
@@ -52,7 +52,7 @@ Any MCP client that supports stdio can launch:
 
 ```bash
 GWORKSPACE_MCP_DOWNLOAD_DIR="$HOME/Downloads/gworkspace-mcp" \
-node /Users/vsasi/dev/google-workspace-mcp/dist/server.js
+node /path/to/google-workspace-mcp/dist/server.js
 ```
 
 ## CLI Fallback
